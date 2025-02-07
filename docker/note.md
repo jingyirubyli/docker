@@ -1,9 +1,9 @@
 # Docker: Mac 上的 Ubuntu 环境搭建
 ## 1. 搭建目标
 ### 在 MacOS 上的 Docker 环境中安装 Ubuntu 镜像并作为虚拟机使用
-- 宿主机器操作系统：MacOS
+- 宿主机器操作系统：MacOS:15.3
 - 容器环境：Docker for Mac
-- 镜像版本：Ubuntu20.04
+- 镜像版本：Ubuntu22.04(正文中出现20.04是因为我刚开始选错版本,读者根据自己情况选择即可)
 ## 2. 详细步骤
 ### 2.1 安装 Docker for Mac
 #### 方法一
