@@ -103,10 +103,10 @@ Docker 容器是命令行的形式，本身不支持图形界面显示，希望 
 jiaxiaofeng/ros2_humble_mac_m1:1.0 \
 /bin/bash
 
-- 第2行-v /Users/zhangdongfang/Projects/ros_ws:/home/zdf1840/ \，:左边的地址是自己主机需要被docker容器挂载的地址，可以随意指定，我这里指定的是我平时放工程的地址，右边的地址是对应容器内ubuntu系统的地址。挂载之后，:左边（主机地址内的文件）和右边（docker容器内ubuntu的文件）相对应，即在docker容器里的操作也能影响到主机。
-- 第4行-e DISPLAY=192.168.1.226:0 \里的192.168.0.101要改成你记录下的IP地址。
+- 第2行-v “/Users/jingyili”:左边的地址是自己主机需要被docker容器挂载的地址，右边的地址是对应容器内ubuntu系统的地址。挂载之后，:左边（主机地址内的文件）和右边（docker容器内ubuntu的文件）相对应，即在docker容器里的操作也能影响到主机。
+- 第4行-e DISPLAY=xxx \要改成自己主机的IP地址。
 - 第9行--name ros2_humble \是设置容器名字，可以根据自己的需求自定义。
-- 第11行-w /home/zdf1840选项用于指定 Docker 容器的 工作目录，即容器启动时默认所在的目录，这里我写的是第2行中冒号右边那个地址。
+- 第11行-w /home选项用于指定Docker容器的工作目录，即容器启动时默认所在的目录。
 
 run命令运行即可。
 
