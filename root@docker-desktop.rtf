@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Fri Feb  7 15:30:02 on ttys005\
+(base) jingyili@JingyiLIdeMacBook-Pro ~ % docker exec -it ros2_humble /bin/bash\
+\
+root@docker-desktop:/home# xclock\
+Error: Can't open display: 10.0.0.49\
+root@docker-desktop:/home# xclock\
+Error: Can't open display: 10.0.0.49\
+root@docker-desktop:/home# xarclock\
+Error: Can't open display: 10.0.0.49\
+root@docker-desktop:/home# ros2 run turtlesim turtlesim_node\
+qt.qpa.xcb: could not connect to display 10.0.0.49\
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.\
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.\
+\
+Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, xcb.\
+\
+[ros2run]: Aborted\
+root@docker-desktop:/home# export DISPLAY=host.docker.internal:0\
+root@docker-desktop:/home# xarclock\
+root@docker-desktop:/home# export DISPLAY=host.docker.internal:0\
+root@docker-desktop:/home# ros2 run turtlesim turtlesim_node\
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\
+[INFO] [1738962752.602941471] [turtlesim]: Starting turtlesim with node name /turtlesim\
+[INFO] [1738962752.607794679] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]\
+^[[C^[[B^[[Aroot@docker-desros2 run turtlesim turtlesim_node\
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\
+[INFO] [1738962929.343746261] [turtlesim]: Starting turtlesim with node name /turtlesim\
+[INFO] [1738962929.345752594] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]\
+root@docker-desktop:/home# xclosk\
+bash: xclosk: command not found\
+root@docker-desktop:/home# xarclock\
+root@docker-desktop:/home# xarclock\
+root@docker-desktop:/home# ros2 run turtlesim turtlesim_node\
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\
+[INFO] [1738963015.748415842] [turtlesim]: Starting turtlesim with node name /turtlesim\
+[INFO] [1738963015.750295092] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]\
+root@docker-desktop:/home# xarclock\
+root@docker-desktop:/home# ros2 run turtlesim turtlesim_node\
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\
+[INFO] [1738963029.029565751] [turtlesim]: Starting turtlesim with node name /turtlesim\
+[INFO] [1738963029.031366959] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]\
+root@docker-desktop:/home# ros2 run turtlesim turtlesim_node\
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\
+[INFO] [1738963125.094662087] [turtlesim]: Starting turtlesim with node name /turtlesim\
+[INFO] [1738963125.100155629] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]\
+root@docker-desktop:/home# xarclock\
+root@docker-desktop:/home# ros2 run turtlesim turtlesim_node\
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\
+[INFO] [1738963563.294159429] [turtlesim]: Starting turtlesim with node name /turtlesim\
+[INFO] [1738963563.295563846] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]\
+root@docker-desktop:/home# exit\
+exit\
+(base) jingyili@JingyiLIdeMacBook-Pro ~ % docker exec -it ros2_humble /bin/bash\
+\
+root@docker-desktop:/home# exit\
+exit\
+(base) jingyili@JingyiLIdeMacBook-Pro ~ % docker exec -it ros2_humble /bin/bash\
+\
+root@docker-desktop:/home# xarclock\
+Error: Can't open display: 10.0.0.49\
+root@docker-desktop:/home# export DISPLAY=host.docker.internal:0\
+root@docker-desktop:/home# xarclock\
+root@docker-desktop:/home# ros2 run turtlesim turtlesim_node\
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'\
+[INFO] [1738963916.268684634] [turtlesim]: Starting turtlesim with node name /turtlesim\
+[INFO] [1738963916.270933384] [turtlesim]: Spawning turtle [turtle1] at x=[5.544445], y=[5.544445], theta=[0.000000]\
+root@docker-desktop:/home# exit\
+exit\
+(base) jingyili@JingyiLIdeMacBook-Pro ~ % \
+}
