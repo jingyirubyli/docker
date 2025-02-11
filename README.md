@@ -14,3 +14,7 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install
 - Mac 上的 docker 实际上在 HyperKit 下运行的 LinuxKit VM 中运行。它首先会为 hyperkit 获取硬件直通，以便它识别 GPU。然后它会获取一个驱动程序来为 linuxkit 上的 gpu 运行，然后我认为它会传递一些 docker 标志，以便它能够获得与硬件通信的特权。
 
 参考: https://github.com/NVIDIA/nvidia-docker/issues/758
+
+- 最初的docker是不支持gpu的. 从docker 19版本之后，nvidia-docker成为了过去式。不需要单独去下nvidia-docker这个独立的docker应用程序，也就是说gpu docker所需要的Runtime被集成进docker中，使用的时候用–gpus参数来控制。
+
+参考: https://blog.csdn.net/Castlehe/article/details/120194820
