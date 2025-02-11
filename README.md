@@ -18,3 +18,14 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install
 - 最初的docker是不支持gpu的. 从docker 19版本之后，nvidia-docker成为了过去式。不需要单独去下nvidia-docker这个独立的docker应用程序，也就是说gpu docker所需要的Runtime被集成进docker中，使用的时候用–gpus参数来控制。
 
 参考: https://blog.csdn.net/Castlehe/article/details/120194820
+
+- mac如何使用mps
+  + 使用 Metal API (Apple 自家 GPU 计算框架)
+
+Apple 提供了 Metal Performance Shaders (MPS)，用于 GPU 计算。PyTorch 和 TensorFlow 已经支持 MPS：
+	•	PyTorch: torch.device("mps")
+	•	TensorFlow: tf.device("/device:GPU:0")
+ + 使用 Docker + NVIDIA GPU 云端服务器
+
+	•	在 远程服务器（如 AWS、Google Cloud） 上部署一个带 CUDA 的 Docker 容器
+	•	使用 SSH + X11 转发 或者 Jupyter Notebook 远程访问
