@@ -23,9 +23,12 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install
   + 使用 Metal API (Apple 自家 GPU 计算框架)
 
 Apple 提供了 Metal Performance Shaders (MPS)，用于 GPU 计算。PyTorch 和 TensorFlow 已经支持 MPS：
+
 	•	PyTorch: torch.device("mps")
+ 
 	•	TensorFlow: tf.device("/device:GPU:0")
  + 使用 Docker + NVIDIA GPU 云端服务器
 
 	•	在 远程服务器（如 AWS、Google Cloud） 上部署一个带 CUDA 的 Docker 容器
+
 	•	使用 SSH + X11 转发 或者 Jupyter Notebook 远程访问
