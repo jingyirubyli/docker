@@ -32,7 +32,7 @@ Apple 提供了 Metal Performance Shaders (MPS)，用于 GPU 计算。PyTorch �
 	•	PyTorch: torch.device("mps")
  
 	•	TensorFlow: tf.device("/device:GPU:0")
- + 使用 Docker + NVIDIA GPU 云端服务器
+ + 使用 Docker + NVIDIA GPU 云端服务器: https://www.docker.com/blog/deploy-gpu-accelerated-applications-on-amazon-ecs-with-docker-compose/
 
 	•	在 远程服务器（如 AWS、Google Cloud） 上部署一个带 CUDA 的 Docker 容器
 
