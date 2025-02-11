@@ -15,7 +15,12 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install
 
 参考: https://github.com/NVIDIA/nvidia-docker/issues/758
 
-- 最初的docker是不支持gpu的. 从docker 19版本之后，nvidia-docker成为了过去式。不需要单独去下nvidia-docker这个独立的docker应用程序，也就是说gpu docker所需要的Runtime被集成进docker中，使用的时候用–gpus参数来控制。
+- 最初的docker是不支持gpu的.
+  英伟达公司发布了nvidia-docker解决.
+  
+https://github.com/NVIDIA/nvidia-container-toolkit
+
+从docker 19版本之后，nvidia-docker成为了过去式。不需要单独去下nvidia-docker这个独立的docker应用程序，也就是说gpu docker所需要的Runtime被集成进docker中，使用的时候用–gpus参数来控制。
 
 参考: https://blog.csdn.net/Castlehe/article/details/120194820
 
